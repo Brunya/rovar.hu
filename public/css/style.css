@@ -5,8 +5,278 @@
 body {
   margin: 0;
   cursor: default;
+  display: block;
 }
 
 * {
   box-sizing: border-box;
+}
+
+h2 {
+  margin: 0px;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+p {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: normal;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+container {
+  display: block;
+}
+
+.header {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  width: 454px;
+  height: 163px;
+  left: 620px;
+  top: 210px;
+  z-index: 999;
+}
+
+.header h1 {
+  margin: 0px;
+  font-family: 'Red Hat Display', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 64px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.header p {
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.header img {
+  position: absolute;
+  width: 449px;
+  height: 451px;
+  left: 0px;
+  bottom: 0px;
+}
+
+.col {
+  width: 100%;
+  height: 566px;
+  background-image: url("/images/col.jpeg");
+  background-size: cover;
+  position: relative;
+  color: #FFFFFF;
+}
+
+.col p {
+  position: absolute;
+  width: 450px;
+  height: 133px;
+  left: 152px;
+  top: 132px;
+  font-weight: 500;
+}
+
+.col h6 {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  margin: 0px;
+font-family: 'Red Hat Display', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.content {
+  padding: 120px 11.5vw;
+}
+
+.problem {
+  width: 100%;
+  margin-bottom: 120px;
+}
+
+.problem img {
+  width: 100%;
+}
+
+.device {
+  margin-bottom: 120px;
+}
+
+.headline {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  background: #F7F7F7;
+  padding: 10px 0px;
+}
+
+.imgrow-cad {
+  display: grid;
+  grid-template-columns: 48% 24% 26%;
+  width: 100%;
+  height: 300px;
+}
+
+.icon {
+  width: 57px;
+  height: 36px;
+  margin: 20px auto;
+  display: block;
+}
+
+.imgrow-cad img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imgrow-photo {
+  display: grid;
+  grid-template-columns: 22% 52% 26%;
+  width: 100%;
+  height: 300px;
+}
+
+.imgrow-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 27% 24% 24% 25%;
+}
+
+.grid-item {
+  width: 100%;
+  text-align: center;
+}
+
+.grid-item h3 {
+  font-weight: bold;
+  margin: 40px 0px 0px 0px;
+  font-size: 24px;
+  font-family: 'Red Hat Display', sans-serif;
+  line-height: 32px;
+}
+
+.grid-item p {
+  font-weight: normal;
+font-size: 18px;
+line-height: 24px;
+margin: 0px;
+}
+
+.logo-up {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+  height: 200px;
+}
+
+.logo-down {
+  display: grid;
+  grid-template-columns: 35% 40% 25%;
+  width: 100%;
+  height: 80px;
+}
+
+.team img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.footer {
+  background-image: url("/images/col.jpeg");
+  background-size: cover;
+  padding: 44px;
+  text-align: center;
+}
+
+.footer h4 {
+  margin: auto;
+  font-style: normal;
+  font-family: 'Red Hat Display', sans-serif;
+font-weight: bold;
+  font-size: 24px;
+line-height: 32px;
+color: white;
+
+}
+
+@media screen and (max-width: 1070px) {
+  .title {
+    position: static;
+    display: block;
+    float: right;
+    margin-top: 25vh;
+  }
+  .header img {
+    width: 39vw;
+    height: 40vw;
+    min-width: 318px;
+    min-height: 326px;
+  }
+  .col {
+    height: 460px;
+  }
+
+  .col p {
+    left: 120px;
+    top: 100px;
+  }
+
+  .content {
+    padding: 120px 6vw;
+  }
+
+  .imgrow-photo {
+    height: 200px;
+  }
+
+  .imgrow-cad {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .header h1 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .grid-item h3 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .title {
+    width: 60%;
+    margin-right: 30px;
+  }
 }
