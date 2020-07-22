@@ -43,7 +43,15 @@ container {
   z-index: 999;
 }
 
-.header h1 {
+.alternative-title {
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.header h1, .col h1 {
   margin: 0px;
   font-family: 'Red Hat Display', sans-serif;
   font-style: normal;
@@ -52,7 +60,7 @@ container {
   line-height: 64px;
   display: flex;
   align-items: center;
-  color: #000000;
+  //color: #000000;
 }
 
 .header p {
@@ -80,11 +88,12 @@ container {
 }
 
 .col p {
-  position: absolute;
+  /* position: absolute;
   width: 450px;
   height: 133px;
   left: 152px;
-  top: 132px;
+  top: 132px; */
+  width: 500px;
   font-weight: 500;
 }
 
@@ -93,7 +102,7 @@ container {
   bottom: 10px;
   right: 20px;
   margin: 0px;
-font-family: 'Red Hat Display', sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
@@ -105,7 +114,7 @@ font-family: 'Red Hat Display', sans-serif;
 
 .problem {
   width: 100%;
-  margin-bottom: 120px;
+  margin-bottom: 60px;
 }
 
 .problem img {
@@ -113,7 +122,7 @@ font-family: 'Red Hat Display', sans-serif;
 }
 
 .device {
-  margin-bottom: 120px;
+  margin-bottom: 100px;
 }
 
 .headline {
@@ -126,9 +135,10 @@ font-family: 'Red Hat Display', sans-serif;
 
 .imgrow-cad {
   display: grid;
-  grid-template-columns: 48% 24% 26%;
+  grid-template-columns: 48% 26% 26%;
   width: 100%;
   height: 300px;
+  margin-top: 30px;
 }
 
 .icon {
@@ -158,13 +168,14 @@ font-family: 'Red Hat Display', sans-serif;
 }
 
 .grid-container {
+  margin: 10px 0 30px 0;
   display: grid;
-  grid-template-columns: 27% 24% 24% 25%;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .grid-item {
   width: 100%;
-  text-align: center;
+  text-align: left;
 }
 
 .grid-item h3 {
@@ -177,9 +188,9 @@ font-family: 'Red Hat Display', sans-serif;
 
 .grid-item p {
   font-weight: normal;
-font-size: 18px;
-line-height: 24px;
-margin: 0px;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0px;
 }
 
 .logo-up {
@@ -213,10 +224,10 @@ margin: 0px;
   margin: auto;
   font-style: normal;
   font-family: 'Red Hat Display', sans-serif;
-font-weight: bold;
+  font-weight: bold;
   font-size: 24px;
-line-height: 32px;
-color: white;
+  line-height: 32px;
+  color: white;
 
 }
 
